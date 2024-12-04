@@ -142,3 +142,19 @@
         font-size: 16px;
     }
 }
+
+.custom-arrow {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+    top: 50%;
+}
+.custom-arrow-right {
+    right: 0;
+}
+
+.custom-arrow-left {
+    left: 0;
+    transform: rotate(180deg);
+}
