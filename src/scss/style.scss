@@ -202,8 +202,9 @@
         display: flex;
         justify-content: center;
         align-items: end;
-        padding: 8px 0px;
+        padding: 16px 0px;
         gap: 10px;
+        margin-bottom: 16px;
         &-icon {
             width: 24px;
         }
@@ -245,6 +246,25 @@
     .map__title {
         text-align: center;
     }
+
+    .contact {
+        &__title {
+            text-align: center;
+        }
+        &__content {
+            flex-direction: row;
+            gap: 20%;
+            padding-bottom: 16px;
+        }
+        &__text {
+            flex-basis: 40%;
+            text-align: start;
+        }
+        &__item {
+            flex-basis: 40%;
+            justify-content: end;
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -271,5 +291,12 @@
             right:50%;
             top: 40%;
         }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 992px;
+        margin: 0 auto;
     }
 }
