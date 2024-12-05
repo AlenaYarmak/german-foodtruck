@@ -104,7 +104,7 @@
 
 .product {
     &__main-title {
-        padding: 32px 0px 8px;
+        padding: 32px 0px 16px;
         color: #F1F1F1;
         font-size: 28px;
         font-weight: 300;
@@ -162,7 +162,7 @@
 .map__section {
     max-width: 320px;
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 32px;
 }
 
 .google-map {
@@ -178,6 +178,40 @@
     font-size: 28px;
     font-weight: 300;
     font-family: variables.$text-font;
+}
+
+.contact {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        color: #F1F1F1;
+        font-family: variables.$text-font;
+        font-size: 16px;
+    }
+    &__title {
+        color: #F1F1F1;
+        font-size: 28px;
+        font-weight: 300;
+        font-family: variables.$text-font;
+        padding-bottom: 16px;
+    }
+    &__text {
+        text-align: center;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding: 8px 0px;
+        gap: 10px;
+        &-icon {
+            width: 24px;
+        }
+        &-text {
+            font-size: 14px;
+        }
+    }
+
 }
 
 @media (min-width: 768px) {
