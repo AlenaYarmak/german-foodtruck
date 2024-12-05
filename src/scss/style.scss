@@ -162,6 +162,7 @@
 .map__section {
     max-width: 320px;
     margin: 0 auto;
+    padding-bottom: 25px;
 }
 
 .google-map {
@@ -177,4 +178,37 @@
     font-size: 28px;
     font-weight: 300;
     font-family: variables.$text-font;
+}
+
+@media (min-width: 768px) {
+    .promotion {
+        padding: 26px;
+        &__image-first {
+            left: 10%;
+            width: 130px;
+        }
+        &__image-second {
+            right: 10%;
+            width: 190px;
+            transform: rotate(-10deg);
+        }
+        &__image-third {
+            bottom: -5%;
+            right: 25%;
+            width: 180px;
+        }
+        &__image-plus {
+            right: 55%;
+            top: 35%;
+        }
+    }
+    .map__section {
+        max-width: 500px;
+    }
+    .google-map {
+        max-width: 500px;
+    }
+    .map__title {
+        text-align: center;
+    }
 }
