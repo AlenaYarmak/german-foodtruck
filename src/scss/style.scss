@@ -212,3 +212,30 @@
         text-align: center;
     }
 }
+
+@media (min-width: 992px) {
+    .promotion {
+        height: 300px;
+        &__title {
+            padding-top: 16px;
+        }
+        &__image-first {
+            left: 20%;
+            width: 140px;
+        }
+        &__image-second {
+            right: 10%;
+            width: 220px;
+            transform: rotate(-10deg);
+        }
+        &__image-third {
+            bottom: -5%;
+            right: 25%;
+            width: 200px;
+        }
+        &__image-plus {
+            right:50%;
+            top: 40%;
+        }
+    }
+}
